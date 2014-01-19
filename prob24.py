@@ -1,14 +1,8 @@
 import itertools
 def prob24():
 	x=0
-	for i in list(itertools.permutations(range(10))):
-		x+=1
-		if(x==1000000):
-			print i
-			break
-
-
+	l=list(itertools.permutations(range(10)))
+	print l[1000000]
 
 if __name__=='__main__':
 	prob24()
-
