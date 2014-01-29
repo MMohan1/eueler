@@ -76,7 +76,7 @@ def new_prob41():
 		if(prob41.is_prime(int(j))):
 			list3.append(j)
 	print max(list3)
-	print 'ram' 
+
 
 
 
