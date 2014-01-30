@@ -46,3 +46,41 @@ def prob41():
 if __name__ == '__main__':
     prob41()
     print time.time() - start_time,'seconds'
+
+
+
+
+
+
+
+
+This is better solution for this problem because it taking less time
+
+import time
+start_time = time.time()
+from new.new1 import prob41
+import itertools
+def new_prob41():
+	a = range(7, 0, -1)
+	list1 = list(itertools.permutations(a))
+	print list1
+	list2 = []
+	for no in list1:
+		str1 = ''
+		for i in range(7):
+			str1 += str(no[i])
+		list2.append(str1)
+	print list2
+	list3 = []
+	for j in list2:
+		if(prob41.is_prime(int(j))):
+			list3.append(j)
+	print max(list3)
+
+
+
+
+if __name__ == '__main__':
+	new_prob41()
+	print 'Total time taken is',time.time() - start_time,'seconds'
+	
