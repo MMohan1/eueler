@@ -7,12 +7,12 @@ def is_prime(i):
 	if flag:
 		return True
 def p10001n0():
-	i = 2
+	i = 3
 	count = 0
-	while count != 600:
+	while count != 10000:
 			if is_prime(i):
 				count += 1
-			i += 1
-	print i-1
+			i += 2
+	print i-2
 if __name__ == '__main__':
 	p10001n0()			
