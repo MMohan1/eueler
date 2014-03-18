@@ -1,4 +1,5 @@
 import math
+
 def function(num=5,minimal=1):
 	temp = 1
 	if num <= 1:
