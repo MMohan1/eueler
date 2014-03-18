@@ -1,9 +1,11 @@
+import sys
 def factorial(n):
 	if n == 0:
 		return 1
 	else:
 		return reduce(lambda x,y:x*y,range(1,n+1))
 def num(n):
+
 	p = 0
 	for i in str(n):
 		p += factorial(int(i))
@@ -26,6 +28,3 @@ def produce_list():
 
 if __name__ == '__main__':
 	produce_list()
-		
-			
-		
